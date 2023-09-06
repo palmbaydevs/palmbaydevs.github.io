@@ -18,8 +18,6 @@ main {
     
 }
 
-body main section{}
-
 .logo-text{
   display: flex;
   align-items: center;
@@ -37,8 +35,8 @@ body main section{}
 }
 
 .logo-text img{
-  max-width: 100px; /* Adjust the image width as needed */
-  margin-right: 20px; /* Adjust the margin between the image and h2 */
+  max-width: 100px; 
+  margin-right: 20px; 
 }
 
 body main section p{
@@ -50,8 +48,7 @@ body main section p{
 }
 
 .button {
-  background-color: #ABABAB; /* Green */
-  border: none;
+  background-color: #ABABAB; 
   color: white;
   padding: 10px 40px;
   text-align: center;

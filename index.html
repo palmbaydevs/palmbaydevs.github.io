@@ -11,22 +11,21 @@
 
 <body>
     <main>
-        <section>
-            <div class="logo-text">
-                <img src="images/Rectangle 3.png">
-                <h2>PALM<br>BAY<br>DEVS</h2>
-            </div>
-            <p>we grow ideas</p>
-            <div class="btn-Container popup" onclick="openForm()">
-                <button class="button button1">Contact</button>
-            </div>
-            <div class="form-popup" id="myForm">
+        <div class="logo-text">
+            <img src="images/Rectangle 3.png">
+            <h2>PALM<br>BAY<br>DEVS</h2>
+        </div>
+        <p>we grow ideas</p>
+        <div class="btn-Container popup" onclick="openForm()">
+            <button class="button button1">Contact</button>
+        </div>
+        <div class="form-popup" id="myForm">
 
-                <form action="/action_page.php" class="form-container">
-                    <span class="close-icon" onclick="closeForm()">&times;</span>
+            <form action="/action_page.php" class="form-container">
+                <span class="close-icon" onclick="closeForm()">&times;</span>
 
-                    <h1>Contact Us</h1>
-
+                <h1>Contact Us</h1>
+                <div class="form-inputs">
                     <label for="email"><b>Name</b></label>
                     <input type="text" placeholder="Enter Name" name="name" required>
 
@@ -35,22 +34,23 @@
 
                     <label for="psw"><b>Message</b></label>
                     <textarea placeholder="Enter message here..." name="msg" required></textarea>
+                </div>
 
-                    <button type="submit" class="button button1 btn-send">Send</button>
-                    <button type="button" class="button btn-cancel" onclick="closeForm()">Close</button>
-                </form>
-            </div>
 
-            <script>
-                function openForm() {
-                    document.getElementById("myForm").style.display = "block";
-                }
+                <button type="submit" class="button button1 btn-send">Send</button>
+                <button type="button" class="button btn-cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
 
-                function closeForm() {
-                    document.getElementById("myForm").style.display = "none";
-                }
-            </script>
-        </section>
+        <script>
+            function openForm() {
+                document.getElementById("myForm").style.display = "block";
+            }
+
+            function closeForm() {
+                document.getElementById("myForm").style.display = "none";
+            }
+        </script>
     </main>
 
 

@@ -32,13 +32,12 @@
                     <label for="psw"><b>Email</b></label>
                     <input type="email" placeholder="Enter Email" name="email" required>
 
-                    <label for="psw"><b>Message</b></label>
-                    <textarea placeholder="Enter message here..." name="msg" required></textarea>
+                    <label for="psw" ><b>Message</b></label>
+                    <textarea placeholder="Enter message here..." name="msg" id="changeColor" onkeyup="changeTheColorOfButton()" required></textarea>
                 </div>
 
 
-                <button type="submit" class="button button1 btn-send">Send</button>
-                <button type="button" class="button btn-cancel" onclick="closeForm()">Close</button>
+                <button type="submit" class="button btn-send" id="buttonDemo">Send</button>
             </form>
         </div>
 
@@ -51,6 +50,15 @@
                 document.getElementById("myForm").style.display = "none";
             }
         </script>
+        <script>
+            function changeTheColorOfButton() {
+               if (document.getElementById("changeColor").value !== "") {
+                  document.getElementById("buttonDemo").style.background = "notfilled";
+               } else {
+                  document.getElementById("buttonDemo").style.background = "filled";
+               }
+            }
+         </script>
     </main>
 
 

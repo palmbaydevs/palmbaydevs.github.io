@@ -21,6 +21,7 @@ main {
 .logo-text{
   display: flex;
   align-items: center;
+  margin-top: -20px;
 }
 
 .logo-text h2{
@@ -29,14 +30,18 @@ main {
     font-size: 48px;
     color: #ABABAB;
     padding:0px;
-	  margin:0px;
+    margin-left: 100px;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
     line-height: 1;
     text-align: left;
 }
 
 .logo-text img{
-  max-width: 100px; 
-  margin-right: 20px; 
+  max-width: 100px;
+  margin-right: -265px;
+  height: 146px;
 }
 
 body main p{
@@ -74,6 +79,33 @@ body main p{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.image-container{
+  position: relative;
+   /* width: 240px; */
+  height: 120px;
+  right: 125px;
+
+}
+
+.image{
+  z-index: 20;
+  position: absolute;
+}
+.rect{
+  z-index: 10;
+  position: absolute;
+  top: 14px;
+  left: 127px;
+  border: 5px solid #ABABAB;
+  border-radius: 8px;
+
+}
+
+.image-container div {
+  width: 68px;
+  height: 119px;
+  margin-top: -17px;
 }
 
 

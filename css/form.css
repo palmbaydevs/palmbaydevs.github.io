@@ -106,19 +106,3 @@
 }
 
 
-
-/* CSS for the button when its background is green */
-#buttonDemo.notfilled {
-    background-color: #E7E7E7;
-
-
-}
-
-/* CSS for the button when its background is sky blue */
-#buttonDemo.filled {
-    background-color: gray;
-
-}
-
-
-  

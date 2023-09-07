@@ -19,7 +19,7 @@
         <div class="btn-Container popup" onclick="openForm()">
             <button class="button button1">Contact</button>
         </div>
-        <div class="form-popup" id="myForm">
+        <div class="form-popup" id="myForm" style="display: none;">
 
             <form action="/action_page.php" class="form-container">
                 <span class="close-icon" onclick="closeForm()">&times;</span>
@@ -32,12 +32,13 @@
                     <label for="psw"><b>Email</b></label>
                     <input type="email" placeholder="Enter Email" name="email" required>
 
-                    <label for="psw" ><b>Message</b></label>
-                    <textarea placeholder="Enter message here..." name="msg" id="changeColor" onkeyup="changeTheColorOfButton()" required></textarea>
+                    <label for="psw"><b>Message</b></label>
+                    <textarea placeholder="Enter message here..." name="msg" id="changeColor"
+                        onkeyup="changeTheColorOfButton()" required></textarea>
                 </div>
 
 
-                <button type="submit" class="button btn-send" id="buttonDemo">Send</button>
+                <button type="submit" class="button btn-send" id="sendbutton">Send</button>
             </form>
         </div>
 
@@ -52,13 +53,13 @@
         </script>
         <script>
             function changeTheColorOfButton() {
-               if (document.getElementById("changeColor").value !== "") {
-                  document.getElementById("buttonDemo").style.background = "notfilled";
-               } else {
-                  document.getElementById("buttonDemo").style.background = "filled";
-               }
+                if (document.getElementById("changeColor").value !== "") {
+                    document.getElementById("sendbutton").style.background = "Platinum";
+                } else {
+                    document.getElementById("sendbutton").style.background = "gray";
+                }
             }
-         </script>
+        </script>
     </main>
 
 

@@ -29,7 +29,6 @@
     line-height: 1;
     border-radius: 8px;
     color: #ABABAB;
-    /* text-align: left; */
 
 
 }
@@ -86,16 +85,22 @@
     margin-bottom:10px;
     opacity: 0.8;
     color: white;
-    background-color: #E7E7E7; 
     border: 2px solid #E7E7E7;
 
 
   }
-
+  button:disabled,
+    button[disabled] {
+        background-color: #E7E7E7;
+        color: white;
+        cursor: not-allowed;
+        
+    }
+/* 
 .btn-send:hover{
     background-color: #ABABAB;
     color: white;
-}
+} */
 
 .close-icon {
     position: absolute;

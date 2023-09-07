@@ -27,18 +27,15 @@
                 <h1>Contact Us</h1>
                 <div class="form-inputs">
                     <label for="email"><b>Name</b></label>
-                    <input type="text" placeholder="Enter Name" name="name" required>
+                    <input type="text" placeholder="Enter Name" name="name" id='name' required>
 
                     <label for="psw"><b>Email</b></label>
-                    <input type="email" placeholder="Enter Email" name="email" required>
+                    <input type="email" placeholder="Enter Email" name="email" id='email' required>
 
                     <label for="psw"><b>Message</b></label>
-                    <textarea placeholder="Enter message here..." name="msg" id="changeColor"
-                        onkeyup="changeTheColorOfButton()" required></textarea>
+                    <textarea placeholder="Enter message here..." name="msg" id='msg' required></textarea>
                 </div>
-
-
-                <button type="submit" class="button btn-send" id="sendbutton">Send</button>
+                <button type="submit" class="button btn-send" id="sendbutton" disabled>Send</button>
             </form>
         </div>
 
@@ -51,18 +48,28 @@
                 document.getElementById("myForm").style.display = "none";
             }
         </script>
+
         <script>
-            function changeTheColorOfButton() {
-                if (document.getElementById("changeColor").value !== "") {
-                    document.getElementById("sendbutton").style.background = "Platinum";
-                } else {
-                    document.getElementById("sendbutton").style.background = "gray";
-                }
+            const submitBtn = document.getElementById('sendbutton')
+
+            const sName = document.getElementById('name')
+            const sEmail = document.getElementById('email')
+            const sMsg = document.getElementById('msg')
+
+            const checkEnableButton = () => {
+                submitBtn.disabled = !(
+                    sName.value &&
+                    sEmail.value &&
+                    sMsg.value
+                )
             }
+
+            sName.addEventListener('input', checkEnableButton)
+            sEmail.addEventListener('input', checkEnableButton)
+            sMsg.addEventListener('input', checkEnableButton)
+
         </script>
     </main>
-
-
 </body>
 
 </html>

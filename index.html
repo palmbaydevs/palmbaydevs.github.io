@@ -16,23 +16,18 @@
                 <div class="image">
                     <img src="images/Rectangle 3.png">
                 </div>
-                <div class="rect">
-
-                </div>
-
+                <div class="rect"></div>
             </div>
 
             <h2>PALM<br>BAY<br>DEVS</h2>
         </div>
         <p>we grow ideas</p>
-        <div class="btn-Container popup" onclick="openForm()">
-            <button class="button button1">Contact</button>
+        <div class="btn-Container popup" >
+            <button class="button button1" onclick="openForm()">Contact</button>
         </div>
         <div class="form-popup" id="myForm" style="display: none;">
-
-            <form action="/action_page.php" class="form-container">
+            <form method="post" action="https://palmbaydevs-form-submit-function.azurewebsites.net/api/FormSubmit?code=oNk2dmDJkrCLZMY1WujauCk-yUoCIHy30tBeumkxfBUrAzFu_uKKaQ==" class="form-container">
                 <span class="close-icon" onclick="closeForm()">&times;</span>
-
                 <h1>Contact Us</h1>
                 <div class="form-inputs">
                     <label for="email"><b>Name</b></label>
@@ -42,7 +37,7 @@
                     <input type="email" placeholder="Enter Email" name="email" id='email' required>
 
                     <label for="psw"><b>Message</b></label>
-                    <textarea placeholder="Enter message here..." name="msg" id='msg' style="resize: vertical;" required></textarea>
+                    <textarea placeholder="Enter message here..." name="message" id='msg' required></textarea>
                 </div>
                 <button type="submit" class="button btn-send" id="sendbutton" disabled>Send</button>
             </form>
